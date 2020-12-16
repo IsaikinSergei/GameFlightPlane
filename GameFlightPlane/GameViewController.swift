@@ -11,8 +11,19 @@ import SceneKit
 
 class GameViewController: UIViewController {
     
+    // MARK: - Outlets
+    let scoreLabel = UILabel()
+    
     // MARK: - Properties
-        var scene: SCNScene!
+    var duration: TimeInterval = 5
+    var hit = true
+    var scene: SCNScene!
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "Score: \(score)"
+        }
+    }
+   
 
     // MARK: - Methods
     
@@ -30,13 +41,30 @@ class GameViewController: UIViewController {
         ship.look(at: SCNVector3(2 * x, 2 * y, 2 * z))
         
         // Add flight animation
-        ship.runAction(.move(to: SCNVector3(), duration: 5)) {
+        ship.runAction(.move(to: SCNVector3(), duration: duration)) {
             self.removeShip()
+            self.newGame()
         }
         
+        // Note that the plane is not hit
+        hit = false
         
         // Add the ship to the scene
         scene.rootNode.addChildNode(ship)
+        
+    }
+    
+    func configureLayout() {
+        let scnView = view as! SCNView
+        
+        scoreLabel.font = UIFont.systemFont(ofSize: 30)
+        scoreLabel.frame = CGRect(x: 0, y: 0, width: scnView.frame.width, height: 100)
+        scoreLabel.textAlignment = .center
+        scoreLabel.textColor = .white
+        
+        scnView.addSubview(scoreLabel)
+        
+        score = 0
         
     }
     
@@ -50,6 +78,17 @@ class GameViewController: UIViewController {
         // Return the ship
         return ship
         
+    }
+    
+    func newGame() {
+        guard hit else { return }
+        
+        
+        // add ship to the scene
+        addShip()
+        
+        // increase difficulty
+        duration *= 0.9
     }
     
     func removeShip() {
@@ -115,8 +154,13 @@ class GameViewController: UIViewController {
         
         // remove existing ship
         removeShip()
-        // Add ship to the scene
-        addShip()
+        
+        // start new game
+        newGame()
+        
+        // configure UI elements
+        configureLayout()
+        
     }
     
     
@@ -133,6 +177,8 @@ class GameViewController: UIViewController {
         let hitResults = scnView.hitTest(p, options: [:])
         // check that we clicked on at least one object
         if hitResults.count > 0 {
+            // note that the plane is not hit
+            hit = true
             // retrieved the first clicked object
             let result = hitResults[0]
             
@@ -146,6 +192,8 @@ class GameViewController: UIViewController {
             // on completion - unhighlight
             SCNTransaction.completionBlock = {
                 self.removeShip()
+                self.newGame()
+                self.score += 1
             }
             
             material.emission.contents = UIColor.red
