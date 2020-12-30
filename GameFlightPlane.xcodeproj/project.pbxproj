@@ -12,9 +12,9 @@
 		EA0CBDC3258A14D80044C5BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CBDC2258A14D80044C5BA /* GameViewController.swift */; };
 		EA0CBDC6258A14D80044C5BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0CBDC4258A14D80044C5BA /* Main.storyboard */; };
 		EA0CBDC8258A14D90044C5BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0CBDC7258A14D90044C5BA /* Assets.xcassets */; };
-		EA0CBDD9258A65F40044C5BA /* screenShot3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0CBDD6258A65F40044C5BA /* screenShot3.png */; };
-		EA0CBDDA258A65F40044C5BA /* screenShot1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0CBDD7258A65F40044C5BA /* screenShot1.png */; };
-		EA0CBDDB258A65F40044C5BA /* screenShot2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0CBDD8258A65F40044C5BA /* screenShot2.png */; };
+		EA7D35CC259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.42.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7D35C9259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.42.png */; };
+		EA7D35CD259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.30.51.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7D35CA259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.30.51.png */; };
+		EA7D35CE259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.32.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7D35CB259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		EA0CBDC5258A14D80044C5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA0CBDC7258A14D90044C5BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0CBDC9258A14D90044C5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA0CBDD6258A65F40044C5BA /* screenShot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot3.png; sourceTree = "<group>"; };
-		EA0CBDD7258A65F40044C5BA /* screenShot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot1.png; sourceTree = "<group>"; };
-		EA0CBDD8258A65F40044C5BA /* screenShot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot2.png; sourceTree = "<group>"; };
+		EA7D35C9259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2020-12-31 в 00.29.42.png"; sourceTree = "<group>"; };
+		EA7D35CA259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.30.51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2020-12-31 в 00.30.51.png"; sourceTree = "<group>"; };
+		EA7D35CB259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2020-12-31 в 00.29.32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 		EA0CBDD4258A61F50044C5BA /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				EA0CBDD7258A65F40044C5BA /* screenShot1.png */,
-				EA0CBDD8258A65F40044C5BA /* screenShot2.png */,
-				EA0CBDD6258A65F40044C5BA /* screenShot3.png */,
+				EA7D35CB259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.32.png */,
+				EA7D35C9259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.42.png */,
+				EA7D35CA259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.30.51.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -138,12 +138,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0CBDDB258A65F40044C5BA /* screenShot2.png in Resources */,
+				EA7D35CC259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.42.png in Resources */,
 				EA0CBDC1258A14D80044C5BA /* art.scnassets in Resources */,
+				EA7D35CD259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.30.51.png in Resources */,
+				EA7D35CE259D1B64005E3EBF /* Снимок экрана 2020-12-31 в 00.29.32.png in Resources */,
 				EA0CBDC8258A14D90044C5BA /* Assets.xcassets in Resources */,
 				EA0CBDC6258A14D80044C5BA /* Main.storyboard in Resources */,
-				EA0CBDD9258A65F40044C5BA /* screenShot3.png in Resources */,
-				EA0CBDDA258A65F40044C5BA /* screenShot1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
